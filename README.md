@@ -2,44 +2,96 @@
 
 ## Overview
 
-This is my testing portfolio for the **OpenCart Demo** platform (https://www.opencart.com/index.php?route=cms/demo&member_token=55467a89e4c9a2e435462dd978437c39).
-The project includes manual test cases, detailed bug reports, and automated test execution logging using Python.
+This is my testing portfolio for the OpenCart Demo platform:  
+🔗 [OpenCart Demo Site](https://www.opencart.com)
 
-**All testing and documentation have been performed locally** in my development environment, while OpenCart is used as the live web version.
+The project includes:
 
-**This project is still a work in progress and is not finalized. The contents and test results are continuously updated.**
-
----
-
-## Contents
-
-- Manual test cases for key OpenCart functionalities
+- Manual test cases for core OpenCart functionalities
 - Detailed bug reports
-- Test execution logging using Python automation
-- Version control managed with Git and synchronization to GitHub via CMD commands
+- Python-based automation for test logging (login test automated using Selenium)
+- Git version control and synchronization with GitHub using CMD
+
+> 🚧 **Note:** This project is under active development and is not finalized. Test execution and documentation are still in progress.
+
+## Technologies & Tools
+
+- **Language:** Python
+- **Automation Tools:** Selenium WebDriver, ChromeDriver
+- **Browser:** Google Chrome v114.0.5735.199
+- **Version Control:** Git via CMD
+- **OS:** Windows 11 (Local Environment)
 
 ---
 
-## Environment
+## Setup Instructions
 
-- OS: Windows 11 (local environment)
-- Browser: Chrome 114.0.5735.199
-- Languages & Tools: Python for logging, Git & CMD for version control and synchronization
-- The project is fully developed and managed locally
+> 🧩 Follow these steps to set up and run the automation scripts locally:
+
+### 1. Install Python
+
+Download and install from: [python.org](https://www.python.org/downloads/)
+
+### 2. Install Required Libraries
+
+Open terminal or CMD and run:
+
+```bash
+pip install selenium pandas openpyxl
+
+
+```
+
+## Download ChromeDriver
+
+- Go to: ChromeDriver Download
+- Download version that matches your installed Chrome
+- Extract and save chromedriver.exe in a known path
+- Add path in script if not already handled via system PATH
 
 ---
 
-## Current Test Execution Results (snapshot)
+## Clone the GitHub Repository
 
-| Test Case ID | Description                                       | Result     | Comments                                                          |
-| ------------ | ------------------------------------------------- | ---------- | ----------------------------------------------------------------- |
-| TC001        | User Registration                                 | Not Tested | To be executed                                                    |
-| TC002        | Login with valid credentials and Terms acceptance | Passed     | Login blocked without accepting Terms; succeeded after acceptance |
-| TC003        | Search for existing product                       | Not Tested | To be executed                                                    |
-| TC004        | Add product to shopping cart                      | Not Tested | To be executed                                                    |
-| TC005        | Update product quantity in cart                   | Not Tested | To be executed                                                    |
-| TC006        | Register with duplicate email                     | Not Tested | To be executed                                                    |
-| TC007        | Checkout without accepting Terms                  | Not Tested | To be executed                                                    |
-| TC008        | Privacy Policy link in footer                     | Not Tested | To be executed                                                    |
-| TC009        | Submit review without rating                      | Not Tested | To be executed                                                    |
-| TC010        | Remove product from cart                          | Not Tested | To be executed                                                    |
+```bash
+git clone https://github.com/Space1111E/OpenCart-Testing-Portfolio.git
+cd OpenCart-Testing-Portfolio
+```
+
+---
+
+## How to Run the Automated Login Test
+
+The login automation is available in the /automation directory.
+
+```bash
+cd automation
+python login_test.py
+```
+
+This script simulates a login attempt on the OpenCart demo website and logs the result.
+
+---
+
+## Git Version Control (via CMD)
+
+This project is managed locally and pushed to GitHub manually using CMD. Example commands:
+
+```bash
+git add .
+git commit -m "Updated README and login test logs"
+git push origin main
+```
+
+---
+
+## Known Limitations
+
+- Only the login test is currently automated; others will be added iteratively.
+- Some test cases remain unexecuted or partially verified.
+- The project structure and documentation are evolving.
+
+---
+
+> ✅ Thank you for visiting this OpenCart testing portfolio!
+> Contributions and suggestions are welcome.
