@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is my testing portfolio for the **OpenCart Demo** platform (https://demo.opencart.com/). The project includes manual test cases, detailed bug reports, and automated test execution logging using Python.
+This is my testing portfolio for the **OpenCart Demo** platform (https://www.opencart.com/index.php?route=cms/demo&member_token=55467a89e4c9a2e435462dd978437c39). The project includes manual test cases, detailed bug reports, and automated test execution logging using Python.
 
 **All testing and documentation have been performed locally** in my development environment, while OpenCart is used as the live web version.
 
