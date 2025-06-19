@@ -22,7 +22,7 @@ def test_opencart_demo_login():
     driver.maximize_window()
 
     try:
-        driver.get("https://demo.opencart.com/index.php?route=account/login")
+        driver.get("https://www.opencart.com/index.php?route=account/login")
         print("Page loaded")
         print("Current URL:", driver.current_url)
         print("Page title:", driver.title)
